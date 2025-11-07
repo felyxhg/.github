@@ -1,0 +1,28 @@
+name: Bug report
+description: Report a reproducible bug or crash
+labels: ["type:bug", "prio:high"]
+body:
+  - type: input
+    id: summary
+    attributes:
+      label: Summary
+      placeholder: "Crash when opening settings"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: "1) ...\n2) ...\n3) ..."
+  - type: input
+    id: expected
+    attributes:
+      label: Expected behavior
+  - type: input
+    id: actual
+    attributes:
+      label: Actual behavior
+  - type: input
+    id: version
+    attributes:
+      label: App version / build number

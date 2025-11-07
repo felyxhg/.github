@@ -1,0 +1,20 @@
+name: Feature request
+description: Suggest a new feature or improvement
+labels: ["type:feature", "prio:medium"]
+body:
+  - type: input
+    id: goal
+    attributes:
+      label: Goal / Motivation
+      placeholder: "Allow users to filter events by category"
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope / Acceptance criteria
+      placeholder: "- ..."
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes / Design references
